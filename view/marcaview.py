@@ -1,0 +1,1 @@
+marca = input("Por favor, ingrese la marca del automóvil que desea (nissan/toyota/peugeot): ").lower()

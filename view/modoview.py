@@ -1,0 +1,1 @@
+modo = (input("¿que desea hacer? (Compra/Agregar) : "))
