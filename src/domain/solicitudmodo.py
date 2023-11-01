@@ -1,5 +1,5 @@
-from service.compraservice import Compra
-from service.agregarservice import Agrega
+from service.compraservice import Compraservice
+from service.agregarservice import Agregarservice
 from controller.modocontroller import AppHandler
 from view.modoview import modo
 
@@ -7,12 +7,12 @@ class mododeuso():
     def main():
         modo
 
-        agregar = Agrega()
-        compra = Compra()
+        Agregar = Agregarservice()
+        Compra = Compraservice()
 
 
-        app_handler = AppHandler(agregar)  
-        agregar.set_next_handler(compra)
+        app_handler = AppHandler(Agregar)  
+        Agregar.set_next_handler(Compra)
  
 
-        app_handler.handle_request()
+        app_handler.handle_request(modo)

@@ -1,1 +1,1 @@
-modo = (input("¿que desea hacer? (Compra/Agregar) : "))
+modo = (input("¿que desea hacer? (Compra/Agregar) : ").lower)
